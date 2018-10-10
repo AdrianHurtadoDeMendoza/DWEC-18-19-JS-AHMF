@@ -1,8 +1,370 @@
+<!-- Prueba 1
+<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
 <body>
-	<p> Hola Mundo JS </p>
+
+	<h2>My First JavaScript</h2>
+
+	<button type="button"
+		onclick="document.getElementById('demo').innerHTML = Date()">
+		Click me to display Date and Time.</button>
+
+	<p id="demo"></p>
+
 </body>
 </html>
+-->
+<!--  Prueba 2 
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2>What Can JavaScript Do?</h2>
+
+	<p id="demo">JavaScript can change HTML content.</p>
+	
+	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
+-->
+<!-- Prueba 3
+
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+	<h2>What Can JavaScript Do?</h2>
+
+	<p>JavaScript can change HTML attribute values.</p>
+
+	<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+	<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+	<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+	<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+ -->
+ <!-- Prueba 4
+ <!DOCTYPE html>
+<html>
+<body>
+
+	<h2>What Can JavaScript Do?</h2>
+
+	<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+	<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+
+</body>
+</html> 
+  -->
+ <!-- Prueba 5
+ <!DOCTYPE html>
+<html>
+<body>
+
+	<h2>What Can JavaScript Do?</h2>
+
+	<p id="demo">JavaScript can hide HTML elements.</p>
+
+	<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+
+</body>
+</html>  
+-->
+<!-- Prueba 6
+ <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Has accionado el boton que llama la funcion para el cambio.";
+}
+</script>
+</head>
+
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">Pulsa para activar funcion</p>
+<button type="button" onclick="myFunction()">¡PULSA!</button>
+
+</body>
+</html>
+ -->
+ <!-- Prueba 7
+<!DOCTYPE html>
+<html>
+<body> 
+
+<h1>A Web Page</h1>
+<p id="demo">PULSA PARA CAMBIAR</p>
+<button type="button" onclick="myFunction()">PULSA</button>
+
+<script>
+function myFunction() {
+   document.getElementById("demo").innerHTML = "Acciona funcion";
+}
+</script>
+
+</body>
+</html> 
+ -->
+ <!-- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+
+</body>
+</html> 
+  -->
+  <!-- 
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+
+<script>
+document.write(5 + 6);
+</script>
+
+</body>
+</html> 
+   -->
+ <!-- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 6);
+</script>
+
+</body>
+</html>
+  -->
+  <!-- 
+  
+  
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>Try change lastName to lastname.</p>
+
+<p id="demo"></p>
+
+<script>
+var lastname, lastName, fullName;
+lastName = "Doe";
+lastname = "Peterson";
+fullName= lastName+lastname;
+document.getElementById("demo").innerHTML = fullName;
+</script>
+
+</body>
+</html>
+  -->
+  <!-- 
+   
+   <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>prueba</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+//con String
+var sName, sApellido, sFullName,iNum1, iNum2, iResultado;
+sName = "Adri";
+sApellido="Hurtado";
+sFullName= sName+ sApellido;
+document.getElementById("demo").innerHTML= sFullName;
+iNum1=10;
+iNum2=3;
+iResultado= (iNum1 * iNum2)/5;
+document.getElementById("demo1").innerHTML=iResultado;
+</script>
+
+</body>
+</html>
+   -->
+   <!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Operators</h2>
+
+<p>Adding a number and a string, returns a string.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = 5 + 5;
+var y = "5" + 5;
+var z = "Hello" + 5;
+document.getElementById("demo").innerHTML =
+x + "<br>" + y + "<br>" + z;
+</script>
+
+</body>
+</html> -->
+<!--  TIPO DATO, ARITMETICA 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The % Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x % y;
+document.getElementById("demo").innerHTML = z;
+</script>
+
+</body>
+</html>
+ -->
+ <!-- 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<h2>The %= Operator</h2>
+
+<p id="demo"></p>
+
+<script>
+var x = 10;
+x %= 5;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
+  -->
+  <!-- 
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns object for both objects, arrays, and null.</p>
+<p>The typeof operator does not return object for functions.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+typeof {name:'john', age:34} + "<br>" +
+typeof [1,2,3,4] + "<br>" +
+typeof null + "<br>" +
+typeof function myFunc(){};
+</script>
+
+</body>
+</html>
+   -->
+   <!--  FUNCIONES Y ARRAYS!!
+   <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demo").innerHTML = cars[0];
+</script>
+
+</body>
+</html>
+    -->
+<!-- 
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+myFunction();
+
+function myFunction() {
+    var carName = "Volvo";
+    document.getElementById("demo1").innerHTML =
+    typeof carName + " " + carName;
+}
+
+document.getElementById("demo2").innerHTML =
+typeof carName;
+</script>
+
+</body>
+</html>   
+-->
+<!--  OBJETOS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The car type is " + car.type;
+</script>
+
+</body>
+</html>
+ -->
+ 
